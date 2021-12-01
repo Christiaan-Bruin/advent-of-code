@@ -10,7 +10,6 @@ const isBigger = (a, b) => {
   return b > a;
 };
 
-// Part 1
 const Part1 = (array) => {
   let increased = 0;
 
@@ -21,7 +20,6 @@ const Part1 = (array) => {
   return increased;
 };
 
-// Part 2
 const Part2 = (array) => {
   let increased = 0;
 
