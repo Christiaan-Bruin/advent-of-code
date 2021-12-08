@@ -50,11 +50,11 @@ const calculateScore = (board, drawnNumbers) => {
   );
 };
 
-function removeBoardFromStorage(board, boardStorage) {
+const removeBoardFromStorage = (board, boardStorage) => {
   const idx = boardStorage.indexOf(board);
   boardStorage.splice(idx, 1);
   return board;
-}
+};
 
 const Part1 = (boards, numbersToDraw) => {
   let scores = [];
