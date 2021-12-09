@@ -35,4 +35,4 @@ const getAllFish = (fishList, days) => {
 
 console.log("Part 1: " + getAllFish(allFish, 80));
 // Shit.
-console.log("Part 2: " + getAllFish(allFish, 256));
+// console.log("Part 2: " + getAllFish(allFish, 256));
