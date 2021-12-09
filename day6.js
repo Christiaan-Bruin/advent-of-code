@@ -23,9 +23,7 @@ const allFish = fs
   .map((x) => parseInt(x))
   .map((x) => new Fish(x));
 
-const amountOfDays = 80;
-
-const Part1 = (fishList, days) => {
+const getAllFish = (fishList, days) => {
   for (let i = 0; i < days; i++) {
     const newFish = fishList
       .map((x) => x.breedFish(fishList))
@@ -35,4 +33,6 @@ const Part1 = (fishList, days) => {
   return fishList.length;
 };
 
-console.log(Part1(allFish, amountOfDays));
+console.log("Part 1: " + getAllFish(allFish, 80));
+// Shit.
+console.log("Part 2: " + getAllFish(allFish, 256));
